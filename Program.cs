@@ -36,10 +36,22 @@ class Kvadr
 	public static  Kvadr dert(string var2)
 	{
         Kvadr one = new Kvadr();
-        string [] app = var2.Split('x', '+', '*', '=');
+        string [] app = var2.Split('x', '+', '=');
         one.A = Convert.ToInt32(app[0]);
         return one;
 	}
+    public double getX()
+    {
+        if (this.a == 0)
+            return 0;
+        else
+        {
+
+            double x = (double)(this.b * -1) / (double)this.a;
+
+            return x;
+        }
+    }
     public override string ToString()
     {
         if (this.b > 0)
