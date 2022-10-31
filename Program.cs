@@ -5,7 +5,8 @@ using System.Diagnostics.Metrics;
 Kvadr df;
 df = new Kvadr();
 //Kvadr.dert("45+22+3=0");
-Console.WriteLine(Kvadr.dert("4x+2=0"));
+Console.WriteLine(Kvadr.dert("5x+5=0"));
+Console.WriteLine(df.getX());
 
 
 
@@ -38,6 +39,12 @@ class Kvadr
         Kvadr one = new Kvadr();
         string [] app = var2.Split('x', '+', '=');
         one.A = Convert.ToInt32(app[0]);
+        if (app[1] != "")
+        {
+            one.B = Convert.ToInt32(app[1]);
+        }
+        else
+            one.B = Convert.ToInt32(app[2]);
         return one;
 	}
     public double getX()

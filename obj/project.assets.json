@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\profi\\.nuget\\packages\\": {}
+    "C:\\Users\\Fishman_1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\profi\\Documents\\Git Hub\\31-10-2022_funkcion\\31-10-2022_funkcion.csproj",
+      "projectUniqueName": "C:\\Users\\Fishman_1\\Documents\\GitHub\\31-10-2022_funkcion\\31-10-2022_funkcion.csproj",
       "projectName": "31-10-2022_funkcion",
-      "projectPath": "C:\\Users\\profi\\Documents\\Git Hub\\31-10-2022_funkcion\\31-10-2022_funkcion.csproj",
-      "packagesPath": "C:\\Users\\profi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\profi\\Documents\\Git Hub\\31-10-2022_funkcion\\obj\\",
+      "projectPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\31-10-2022_funkcion\\31-10-2022_funkcion.csproj",
+      "packagesPath": "C:\\Users\\Fishman_1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\31-10-2022_funkcion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\profi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fishman_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
