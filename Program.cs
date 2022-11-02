@@ -5,7 +5,7 @@
 //Kvadr df = Kvadr.Parse(Console.ReadLine());
 //Kvadr.dert("45+22+3=0");
 Kvadr df = new Kvadr();
-string var = "5x + 10 = 0";
+string var = "-5x + 10 = 0";
 df=Kvadr.Parse(var);
 Console.WriteLine(df);
 Console.WriteLine("Корень линейного уравнения: ");
@@ -34,9 +34,9 @@ class Kvadr
         Kvadr one = new Kvadr();
         string [] app = var2.Split('x', '+', '='); //"5x + 10 = 0"
         one.A = Convert.ToInt32(app[0]);
-        Console.WriteLine("обьект ",one.A);
+       // Console.WriteLine("обьект ",one.A);
         one.B = Convert.ToInt32(app[2]);
-        Console.WriteLine("обьект ",one.B);
+        //Console.WriteLine("обьект ",one.B);
        
         return one;
 	}
@@ -48,8 +48,13 @@ class Kvadr
         {
 
             double x = (double)(this.b * -1) / (double)this.a;
-
-            return x;
+            if (x < 0)
+            {
+                Console.WriteLine("Нет корней !");
+            }
+             
+                else return x;
+            return -1;
         }
     }
     public override string ToString()
