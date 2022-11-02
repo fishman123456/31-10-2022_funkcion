@@ -1,21 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Diagnostics.Metrics;
 
-Kvadr df;
-df = new Kvadr();
+
+//Kvadr df = Kvadr.Parse(Console.ReadLine());
 //Kvadr.dert("45+22+3=0");
-Console.WriteLine(Kvadr.dert("5x+5=0"));
-Console.WriteLine(df.getX());
+Kvadr df = new Kvadr();
+string var = "5x + 10 = 0";
+df=Kvadr.Parse(var);
+Console.WriteLine(df);
+Console.WriteLine("Корень линейного уравнения: ");
+Console.WriteLine ( df.getX());
 
-
+//Console.WriteLine(Kvadr.getX());
 
 class Kvadr
     {
    private int a=0;
    private int b=0;
-   private int myVar;
-
     public int A
     {
         get { return a; }
@@ -27,24 +28,16 @@ class Kvadr
         set { b = value; }
     }
 
-    public int MyProperty
-	{
-		get { return myVar; }
-		set { myVar = value; }
-	}
 
-
-	public static  Kvadr dert(string var2)
+	public static  Kvadr Parse  (string var2)
 	{
         Kvadr one = new Kvadr();
-        string [] app = var2.Split('x', '+', '=');
+        string [] app = var2.Split('x', '+', '='); //"5x + 10 = 0"
         one.A = Convert.ToInt32(app[0]);
-        if (app[1] != "")
-        {
-            one.B = Convert.ToInt32(app[1]);
-        }
-        else
-            one.B = Convert.ToInt32(app[2]);
+        Console.WriteLine("обьект ",one.A);
+        one.B = Convert.ToInt32(app[2]);
+        Console.WriteLine("обьект ",one.B);
+       
         return one;
 	}
     public double getX()
